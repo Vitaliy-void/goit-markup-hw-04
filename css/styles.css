@@ -134,14 +134,36 @@ span {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
-    color: #2e2f42;
-        
-        
+    color: #2e2f42;    
 }
 
+.accent {
+    position:relative;
+}
+.menu-item-accent {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #404bbf;   
+}
 .menu-item:hover {
     color: #404bbf;
     text-decoration: underline;
+}
+
+.menu-item-accent::after {
+    position:absolute;
+    bottom: -50px;
+    display: flex;
+    gap: 20px;
+    content: "";
+    border-radius: 2px;
+    width: 48px;
+    height: 4px;
+    background-color: #404bbf;
+    /* margin-top: 4px; */
 }
 
 .menu-item:focus {
@@ -171,9 +193,14 @@ address {
 }
 
 .section-solution {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7))
+        , url(../images/hero_image.jpg);
+    background-size: cover;
     padding: 188px 0;
     margin: 0 auto;
-    background: #2e2f42;
     display: flex;
     flex-direction: column;
     font-family: "Roboto", sans-serif;
@@ -183,6 +210,7 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    width: 1158px;
 }
 
 .solution {
@@ -215,7 +243,6 @@ address {
     letter-spacing: 0.04em;
     color: #fff; 
     cursor: pointer;
-    /* margin-bottom: 188px; */
     }
 
 .service:hover {
@@ -229,6 +256,29 @@ address {
 .advantages-head {
     padding: 120px 0;
 }
+
+.advantage-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4FD;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+}
+
+.advantage-icon-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: #F4F4FD;
+}
+
 .advantages-title {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -274,6 +324,7 @@ address {
     background: #F4F4FD;
     /* max-width: 1158px; */
     padding: 120px 0;
+    
 }
 
 .column-container {
@@ -308,7 +359,7 @@ address {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
-    /* padding: 32px 0; */
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .our-team-foto {
     justify-content: center;
@@ -339,6 +390,32 @@ address {
     text-align: center;
     color: #434455;
 }
+
+.our-team-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 32px;
+}
+
+.our-team-link {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #4d5ae5;
+    width: 40px;
+    height: 40px;
+}
+.our-team-icon {
+    fill: #fff;
+    stroke: #4d5ae5;
+    /* viewBox="0 0 40 40"; */
+    /* border-radius: 100%; */
+
+}
+
 
 .portfolio {
     padding-top: 120px;
