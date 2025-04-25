@@ -155,7 +155,7 @@ span {
 
 .menu-item-accent::after {
     position:absolute;
-    bottom: -50px;
+    bottom: -51px;
     display: flex;
     gap: 20px;
     content: "";
@@ -446,6 +446,11 @@ address {
 .portfolio-list-item {
     width: calc((100% - 48px) / 3);
 }
+
+.portfolio-list-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    /* border-radius: 4px; */
+}
 .portfolio-foto {
     justify-content: center;
     align-items: center;
@@ -486,6 +491,24 @@ address {
     align-items: flex-start;
     flex-direction: column;
     gap: 16px;
+}
+
+.footer-list {
+    display: flex;
+    
+    align-items: center;
+    gap: 120px;
+    
+}
+
+.social {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
 }
 .footer-text {
     font-family: "Roboto", sans-serif;
