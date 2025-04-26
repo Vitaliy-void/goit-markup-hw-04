@@ -148,14 +148,14 @@ span {
     position:relative; */
 /* } */
 .menu-item-accent {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
-    color: #404bbf;   
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
 }
 .menu-item:hover {
     color: #404bbf;
